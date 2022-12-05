@@ -9,7 +9,5 @@ inputs:
     description: 'Hello'
     required: true
 runs:
-  using: "docker"
-  steps:
-    - run: "action.sh"
-      shell: sh
+  using: 'node12'
+  main: 'dist/index.js'
