@@ -1,4 +1,4 @@
-name: echoers123
+name: github-actions-release
 description: Prints out hello
 author: echo
 runs:
