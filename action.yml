@@ -1,6 +1,14 @@
 name: github-actions-release
 description: Prints out hello
 author: echo
+inputs:
+  checkout:
+    description: 'Specifies if this action should checkout the code'
+    required: false
+    default: 'true'
+  message_to_print:
+    description: 'Hello'
+    required: true
 runs:
   using: docker
   steps:
