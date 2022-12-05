@@ -2,7 +2,7 @@ name: github-actions-release
 description: Prints out hello
 author: echo
 runs:
-  using: ubuntu-latest
+  using: docker
   steps:
     - run: "${GITHUB_ACTION_PATH}/action.sh"
       shell: sh
