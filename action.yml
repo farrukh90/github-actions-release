@@ -9,5 +9,7 @@ inputs:
     description: 'Hello'
     required: true
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/actions.sh
+      shell: bash
