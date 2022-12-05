@@ -1,8 +1,15 @@
 name: github-actions-release
 description: Prints out hello
 author: echo
+branding:
+  icon: 'truck'
+  color: 'blue'
+inputs:
+  message_to_print:
+    description: 'Hello'
+    required: true
 runs:
-  using: docker
+  using: "node12"
   steps:
-    - run: "${GITHUB_ACTION_PATH}/action.sh"
+    - run: "action.sh"
       shell: sh
