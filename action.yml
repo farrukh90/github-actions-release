@@ -8,6 +8,10 @@ inputs:
   message_to_print:
     description: 'Hello'
     required: true
+outputs:
+  random-number:
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-number }}
 runs:
   using: "composite"
   steps:
@@ -15,7 +19,3 @@ runs:
       shell: bash
 
 
-outputs:
-  random-number:
-    description: "Random number"
-    value: ${{ steps.random-number-generator.outputs.random-number }}
