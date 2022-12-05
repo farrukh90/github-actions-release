@@ -9,7 +9,7 @@ inputs:
     description: 'Hello'
     required: true
 runs:
-  using: "centos"
+  using: "docker"
   steps:
     - run: "action.sh"
       shell: sh
